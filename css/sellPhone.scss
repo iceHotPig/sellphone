@@ -1,0 +1,1531 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 306199 */
+    src: url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.eot');
+    src: url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.svg#iconfont') format('svg');
+    }
+   .iconfontyyy{
+      font-family:'iconfont';
+      float: right;
+      display: none;
+      font-size: 33px;
+    }
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ul ,li{
+    list-style: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@mixin position($value1,$value2,$value3){
+    position: $value1;
+    top: $value2;
+    left: $value3;
+}
+@mixin property($num1,$num2,$num3){
+    width: $num1;
+    height: $num2;
+    background: $num3;
+}
+@mixin Wcenter($num1,$value1,$num2,$value2){
+    line-height: $num1;
+    text-align: $value1;
+    font-size: $num2;
+    color: $value2;
+}
+@mixin Pcenter($num1,$num2){
+    margin: $num1 $num2 ;
+}
+.header{
+    @include property(100%,148px,none);
+    .headerT{
+        @include property(100%,109px,#ab0e1f);
+        .hBanner{
+            @include property(990px,109px,#ab0e1f);
+            @include Pcenter(0,auto);
+            display: flex;
+            flex-deration: column;
+            justify-content: space-between;
+        .hB1{
+            @include property(230px,100%,none);
+            }
+            img[class=bh]{
+                margin-right: 4px;
+                float:left;
+            }
+            p{
+                float:left;
+                @include Pcenter(5px,4px);
+                @include Wcenter(22px,left,17px,white);
+            }
+            p[class=hbp]{
+                @include property(106px,33px,#fdf401);
+                @include Wcenter(22px,center,17px,red);
+                border-radius: 10px;
+            }
+        }
+    }
+    .headerB{
+        @include property(100%,39px,#840200);
+        .hNav{
+            @include property(990px,39px,#840200);
+            @include Pcenter(0,auto);
+
+            .list{
+                @include property(100%,100%,#840200);
+                li{
+                    @include property(auto,100%,#840200);
+                    float:left;
+                    @include Wcenter(39px,center,20px,white);
+                    @include Pcenter(0,10px);
+                }
+                li:hover{
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
+.mBanner{
+    @include property(100%,600px,#e2d5c5);
+
+    .mBfather{
+        @include property(990px,600px,#e2d5c5);
+        @include position(relative,0,0);
+        @include Pcenter(0,auto);
+        overflow: hidden;
+        .mBpic{
+            @include position(absolute,0,0);
+            .mBson{
+               @include property(990px,600px,none);
+               float: left;
+            }
+        }
+    }
+
+}
+.content {
+        @include property(100%,auto,#dc021a);
+        .cBanner{
+            @include property(990px,580px,none);
+            @include Pcenter(0,auto);
+            .cBtop{
+                @include property(100%,180px,none);
+                img{
+                    @include property(25%,180px,none);
+                    float:left;
+                }
+            }
+            .cBbottom{
+                @include property(990px,400px,none);
+                @include Pcenter(0,auto);
+            .cBbl{
+                @include property(50%,400px,none);
+                float: left;
+                .cBblt{
+                    @include property(100%,33%,none);
+                    border: 1px solid #dc021a;
+                    box-sizing: border-box;
+                    .cBblt-1{
+                        @include property(50%,100%,none);
+                        border: 1px solid #dc021a;
+                        box-sizing: border-box;
+                        float: left;
+                        img{
+                       @include property(100%,100%,none);
+                    }
+                    }
+                }
+                .cBblb{
+                    @include property(100%,67%,none);
+                    border: 1px solid #dc021a;
+                    box-sizing: border-box;
+                    img{
+                       @include property(100%,100%,none);
+                    }
+                }
+            }
+            .cBbr{
+                @include property(50%,400px,none);
+                float: left;
+                .cBbrl{
+                    @include property(50%,400px,none);
+                    float: left;
+                    .cBbrl-1{
+                       @include property(100%,60%,none);
+                       border: 1px solid #dc021a;
+                       box-sizing: border-box;
+                       img{
+                       @include property(100%,100%,none);
+                    }
+                    }
+                    .cBbrl-2{
+                       @include property(100%,40%,none);
+                       border: 1px solid #dc021a;
+                       box-sizing: border-box;
+                       img{
+                       @include property(100%,100%,none);
+                    }
+                    }
+
+                }
+                .cBbrr{
+                    @include property(50%,400px,none);
+                    float: left;
+                    img{
+                       @include property(100%,100%,none);
+                    }
+                }
+            }
+
+            }
+        }
+        .cNav{
+            @include property(990px,auto,none);
+            @include Pcenter(0,auto);
+            border-bottom: 2px solid red;
+            box-sizing: border-box;
+            .cNtop{
+                @include property(990px,65px,#f1f1f1);
+                border-bottom: 2px solid red;
+                box-sizing: border-box;
+                ul {
+                    @include property(990px,55px,#f1f1f1);
+                    li{
+                        float: left;
+                        @include Wcenter(55px,center,15px,black);
+                        margin: 5px;
+                        p{
+                            @include position(relative,-40px,0)
+
+                        }
+                        img{
+                            float:left;
+                            margin-top:10px;
+                        }
+                    }
+                    .li1{
+                        @include property(124px,50px,#f1f1f1);
+                        border-left: 1px solid gray;
+                    }
+                    .li2{
+                        @include property(90px,55px,#f1f1f1);
+                        border-left: 1px solid gray;
+                        border-right: 1px solid gray;
+                    }
+                    }
+                }
+                .cNbot{
+                    overflow:hidden;
+                    @include property(990px,auto,white);
+                    .son{
+                        @include property(120px,auto,none);
+                        float:left;
+                        @include Pcenter(0px,1px);
+                        p{
+                            @include property(110px,auto,#44a8f5);
+                            border-radius:5px;
+                            @include Wcenter(30px,center,20px,white)
+                        }
+                        p:nth-child(1){
+                            margin-left: 10px;
+                        }
+                        ul li{
+                            @include Wcenter(20px,center,15px,black);
+                            display: none;
+                        }
+                        .son:hover ul li{
+                            display: block;
+                        }
+                        ul li:hover{
+                            color:red;
+                        }
+                    }
+                }
+            }
+            .main{
+                @include property(990px,auto,none);
+                @include Pcenter(0,auto);
+                @include position(relative,0,0);
+                    .bg{
+                        background: blue;
+                    }
+                    .mainSon1{
+                        @include property(100%,565px,#993399);
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,500px,#ffffff);
+                            .part1{
+                                @include property(40%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                                    @include property(100%,80%,none);
+                                }
+                                .partson1{
+                                   @include property(100%,20%,none);
+                                   border: 1px solid red;
+                                   box-sizing: border-box;
+                                   margin-top:-1px;
+                                   overflow:hidden;
+                                   .sonBox{
+                                        @include property(70%,100%,none);
+                                        float: left;
+                                       .ppt{
+                                          @include Wcenter(30px,left,20px,red);
+                                        }
+                                        .ppb{
+                                            @include Wcenter(30px,left,20px,black);
+                                        }
+                                   }
+                                    .sonBox1{
+                                        @include property(15%,90%,red);
+                                        float: left;
+                                        border-bottom-left-radius:30%;
+                                        border-bottom-right-radius:30%;
+                                        @include Wcenter(30px,center,20px,white);
+
+                                        @include position(relative,0,0)
+                                   }
+                                }
+                            }
+                            .part2{
+                                @include property(20%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img[class=pict2]{
+                                    @include property(100%,40%,none);
+                                    border: 1px solid red;
+                                    box-sizing: border-box;
+                                }
+                                .partson2{
+                                    @include property(100%,10%,none);
+                                    border: 1px solid red;
+                                    margin-top:-3px;
+                                    box-sizing: border-box;
+                                    .psonl{
+                                        @include property(60%,100%,white);
+                                        @include Wcenter(50px,center,15px,red);
+                                          float:left;
+                                    }
+                                    .psonr{
+                                        @include property(40%,100%,red);
+                                        @include Wcenter(50px,center,15px,white);
+                                        float:left;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon2{
+                        @include property(100%,565px,#33FF33);
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,500px,#ffffff);
+                            .part1{
+                                @include property(40%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                                    @include property(100%,80%,none);
+                                }
+                                .partson1{
+                                   @include property(100%,20%,none);
+                                   border: 1px solid red;
+                                   box-sizing: border-box;
+                                   margin-top:-1px;
+                                   .ppt{
+                                     @include property(100%,30px,none);
+                                    @include Wcenter(30px,center,20px,red);
+                                   }
+                                   .ppb{
+                                        @include property(100%,30px,none);
+                                        @include Wcenter(30px,center,20px,black);
+                                   }
+
+                                }
+                            }
+                            .part2{
+                                @include property(20%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img[class=pict2]{
+                                    @include property(100%,40%,none);
+                                    border: 1px solid red;
+                                    box-sizing: border-box;
+                                }
+                                .partson2{
+                                    @include property(100%,10%,none);
+                                    border: 1px solid red;
+                                    margin-top:-3px;
+                                    box-sizing: border-box;
+                                    .psonl{
+                                        @include property(60%,100%,white);
+                                        @include Wcenter(50px,center,15px,red);
+                                          float:left;
+                                    }
+                                    .psonr{
+                                        @include property(40%,100%,red);
+                                        @include Wcenter(50px,center,15px,white);
+                                        float:left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .mainSon3{
+                        @include property(100%,565px,#FF3333);
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,500px,#ffffff);
+                            img{
+                               @include property(33.3%,50%,none);
+                               border:1px solid red;
+                               box-sizing: border-box;
+                               float:left;
+                            }
+                        }
+                    }
+                    .mainSon4{
+                        @include property(100%,565px,#6666FF);
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,500px,#ffffff);
+                            .part4{
+                                @include property(100%,50%,none);
+                                border:1px solid red;
+                                box-sizing: border-box;
+                                .part4-1{
+                                    @include property(50%,100%,none);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+                                }
+                                .part4-2{
+                                    @include property(33.3%,100%,none);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .mainSon5{
+                        @include property(100%,565px,#66FFFF);
+                       .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,500px,#ffffff);
+                            .part5{
+                                @include property(100%,50%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                .part5-2{
+                                    @include property(50%,100%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                       @include property(100%,100%,none)
+                                    }
+
+                                }
+                                .part5-1{
+                                    @include property(25%,100%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon6{
+                        @include property(100%,270px,white);
+                        border: 1px solid #dc021a;
+                        box-sizing: border-box;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .mainSon7{
+                        @include property(40px,240px,none);
+                        @include position(fixed,100px,50px);
+                        li{
+                            @include property(40px,40px,none);
+                            border: 1px solid gray;
+                            margin: 2px;
+                        }
+
+                    }
+            }
+}
+.footer{
+    clear:both;
+    @include property(100%,117px,#dc021a);
+    a{
+       @include property(100px,40px,#75E33E);
+       text-decoration:none;
+       position:fixed;
+       bottom: 20px;
+       right: 20px;
+       @include Wcenter(40px,center,20px,white);
+       border-radius:10px;
+    }
+}
+@media screen and (max-width:993px){
+    @font-face {
+    font-family: 'iconfont';  /* project id 306199 */
+    src: url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.eot');
+    src: url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_gghgogaf8si6n7b9.svg#iconfont') format('svg');
+    }
+   .iconfontyyy{
+      font-family:'iconfont';
+      float: right;
+      display: block;
+      font-size: 33px;
+    }
+    .header{
+            @include property(100%,auto,none);
+            .headerT{
+                    @include property(100%,auto,#ab0e1f);
+                    .hBanner{
+                        @include property(100%,auto,#ab0e1f);
+                        @include Pcenter(0,auto);
+                        display: flex;
+                        flex-deration: column;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .hB1{
+                            @include property(50%,109px,none);
+                        }
+                        img[class=bh]{
+                            margin-right: 4px;
+                        }
+                        p{
+                            float:left;
+                            @include Pcenter(5px,4px);
+                            @include Wcenter(22px,left,17px,white);
+                        }
+                        p[class=hbp]{
+                            @include property(53%,33px,#fdf401);
+                            @include Wcenter(22px,center,17px,red);
+                            border-radius: 10px;
+                        }
+                    }
+            }
+            .headerB{
+                    @include property(100%,40px,#840200);
+                    .hNav{
+                        @include property(auto,40px,none);
+                        position: fixed;
+                        top: 0;
+                        right:0;
+                        .list{
+                            @include property(100px,20px,none);
+                             li{
+                                @include property(100px,20px,blue);
+                                clear:both;
+                                display: none;
+                            }
+                            li:hover{
+                                color:yellow;
+                            }
+                        }
+                    }
+            }
+        }
+        .mBanner{
+                @include property(100%,600px,#e2d5c5);
+                .mBfather{
+                    @include property(100%,600px,#e2d5c5);
+                    @include position(relative,0,0);
+                    @include Pcenter(0,auto);
+                    overflow: hidden;
+                    .mBpic{
+                        @include position(absolute,0,0);
+                        .mBson{
+                           @include property(100%,600px,none);
+                           float: left;
+                        }
+                    }
+                }
+        }
+.content{
+                @include property(100%,auto,#dc021a);
+                .cBanner{
+                    @include property(100%,auto,none);
+                    @include Pcenter(0,auto);
+                    .cBtop{
+                        @include property(100%,auto,none);
+                        img{
+                            @include property(50%,auto,none);
+                            float:left;
+                        }
+                    }
+                    .cBbottom{
+                        overflow:hidden;
+                        @include property(100%,auto,none);
+                        @include Pcenter(0,auto);
+                    .cBbl{
+                        @include property(100%,auto,none);
+                        float: left;
+                        .cBblt{
+                            @include property(100%,34%,none);
+                            border: 1px solid #dc021a;
+                            box-sizing: border-box;
+                            .cBblt-1{
+                                @include property(50%,100%,none);
+                                border: 1px solid #dc021a;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                               @include property(100%,100%,none);
+                            }
+                            }
+                        }
+                        .cBblb{
+                            @include property(100%,66%,none);
+                            border: 1px solid #dc021a;
+                            box-sizing: border-box;
+                            img{
+                               @include property(100%,100%,none);
+                            }
+                        }
+            }
+            .cBbr{
+                @include property(100%,auto,none);
+                float: left;
+                .cBbrl{
+                    @include property(50%,auto,none);
+                    float: left;
+                    .cBbrl-1{
+                       @include property(100%,60%,none);
+                       border: 1px solid #dc021a;
+                       box-sizing: border-box;
+                       img{
+                       @include property(100%,100%,none);
+                    }
+                    }
+                    .cBbrl-2{
+                       @include property(100%,40%,none);
+                       border: 1px solid #dc021a;
+                       box-sizing: border-box;
+                       img{
+                       @include property(100%,100%,none);
+                    }
+                    }
+                }
+                .cBbrr{
+                    @include property(50%,auto,none);
+                    float: left;
+                    img{
+                       @include property(100%,100%,none);
+                    }
+                }
+            }
+
+            }
+        }
+        .cNav{
+            @include property(100%,auto,none);
+            @include Pcenter(0,auto);
+            border-bottom: 2px solid red;
+            box-sizing: border-box;
+            .cNtop{
+                @include property(100%,auto,#f1f1f1);
+                border-bottom: 2px solid red;
+                box-sizing: border-box;
+                ul {
+                    @include property(100%,auto,#f1f1f1);
+                    li{
+                        display: none;
+                        float: left;
+                        @include Wcenter(55px,center,15px,black);
+                        margin: 5px;
+                        p{
+                            @include position(relative,-40px,0)
+
+                        }
+                        img{
+                            float:left;
+                            margin-top:10px;
+                        }
+                    }
+                    .li1{
+                        @include property(124px,50px,#f1f1f1);
+                        border-left: 1px solid gray;
+                    }
+                    .li2{
+                        @include property(90px,55px,#f1f1f1);
+                        border-left: 1px solid gray;
+                        border-right: 1px solid gray;
+                    }
+                    }
+                }
+                .cNbot{
+                    // overflow:hidden;
+                    @include property(100%,auto,white);
+                    .son{
+                        @include property(24%,auto,none);
+                        float:left;
+                        @include Pcenter(0px,1px);
+                        p{
+                            @include property(22%,auto,#44a8f5);
+                            border-radius:5px;
+                            @include Wcenter(30px,center,20px,white)
+                        }
+
+                        ul li{
+                            @include Wcenter(20px,center,15px,black);
+                            display: none;
+                        }
+                        .son:hover ul li{
+                            display: block;
+                        }
+                        ul li:hover{
+                            color:red;
+                        }
+                    }
+                }
+            }
+         .main{
+                @include property(100%,auto,none);
+                @include Pcenter(0,auto);
+                @include position(relative,0,0);
+                    .bg{
+                        background: blue;
+                    }
+                    .mainSon1{
+                        @include property(100%,auto,#FFF);
+                        overflow:hidden;
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,500px,#ffffff);
+                            .part1{
+                                @include property(100%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                                    @include property(100%,80%,none);
+                                }
+                                .partson1{
+                                   @include property(100%,20%,none);
+                                   border: 1px solid red;
+                                   box-sizing: border-box;
+                                   margin-top:-1px;
+                                   .ppt{
+                                     @include property(100%,30px,none);
+                                    @include Wcenter(30px,center,20px,red);
+                                   }
+                                   .ppb{
+                                        @include property(100%,30px,none);
+                                        @include Wcenter(30px,center,20px,black);
+                                   }
+
+                                }
+                            }
+                            .part2{
+                                @include property(33.33%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img[class=pict2]{
+                                    @include property(100%,40%,none);
+                                    border: 1px solid red;
+                                    box-sizing: border-box;
+                                }
+                                .partson2{
+                                    @include property(100%,10%,none);
+                                    border: 1px solid red;
+                                    margin-top:-3px;
+                                    box-sizing: border-box;
+
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon2{
+                        @include property(100%,auto,#fff);
+                        overflow:hidden;
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            .part1{
+                                @include property(100%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                                    @include property(100%,80%,none);
+                                }
+                                .partson1{
+                                   @include property(100%,20%,none);
+                                   border: 1px solid red;
+                                   box-sizing: border-box;
+                                   margin-top:-1px;
+                                   .ppt{
+                                     @include property(100%,30px,none);
+                                    @include Wcenter(30px,center,20px,red);
+                                   }
+                                   .ppb{
+                                        @include property(100%,30px,none);
+                                        @include Wcenter(30px,center,20px,black);
+                                   }
+
+                                }
+                            }
+                            .part2{
+                                @include property(33.33%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img[class=pict2]{
+                                    @include property(100%,40%,none);
+                                    border: 1px solid red;
+                                    // border-bottom:none;
+                                    box-sizing: border-box;
+
+
+                                }
+                                .partson2{
+                                    @include property(100%,10%,none);
+                                    border: 1px solid red;
+                                    margin-top:-3px;
+                                    box-sizing: border-box;
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon3{
+                        @include property(100%,auto,#FF3333);
+                        overflow:hidden;
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            img{
+                               @include property(50%,auto,none);
+                               border:1px solid red;
+                               box-sizing: border-box;
+                               float:left;
+                            }
+                        }
+                    }
+                    .mainSon4{
+                        overflow:hidden;
+                        @include property(100%,auto,#FFF);
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            .part4{
+                                @include property(100%,50%,none);
+                                border:1px solid red;
+                                box-sizing: border-box;
+                                .part4-1{
+                                    @include property(100%,100%,none);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+                                }
+                                .part4-2{
+                                    @include property(33.3%,100%,none);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .mainSon5{
+                        @include property(100%,auto,#FFF);
+                        overflow:hidden;
+                       .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            .part5{
+                                @include property(100%,50%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                .part5-2{
+                                    @include property(100%,100%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                       @include property(100%,100%,none)
+                                    }
+
+                                }
+                                .part5-1{
+                                    @include property(50%,100%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon6{
+                        @include property(100%,270px,none);
+                        border: 1px solid red;
+                        box-sizing: border-box;
+                    }
+                    .mainSon7{
+                        @include property(40px,240px,none);
+                        @include position(fixed,100px,50px);
+                        li{
+                            @include property(40px,40px,none);
+                            border: 1px solid gray;
+                            margin: 2px;
+                        }
+
+                    }
+            }
+        }
+
+}
+@media screen and (max-width:500px){
+.header{
+    @include property(100%,auto,none);
+    .headerT{
+            @include property(100%,auto,#ab0e1f);
+            .hBanner{
+                @include property(100%,auto,#ab0e1f);
+                @include Pcenter(0,auto);
+                display: flex;
+                flex-deration: column;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .hB1{
+                    @include property(100%,159px,none);
+                }
+                img[class=bh]{
+                    margin-right: 4px;
+                }
+                p{
+                    @include Pcenter(5px,4px);
+                    @include Wcenter(32px,left,17px,white);
+                }
+                p[class=hbp]{
+                    @include property(100%,33px,#fdf401);
+                    @include Wcenter(22px,center,17px,red);
+                    border-radius: 10px;
+                }
+            }
+        }
+        .headerB{
+            @include property(100%,40px,#840200);
+            .hNav{
+                @include property(100px,40px,none);
+                position:fixed;
+                top:0;
+                right:0;
+                .list{
+                    @include property(100px,40px,none);
+
+                     li{
+                        display: none;
+                        @include property(100px,40px,none);
+                        clear:both;
+                    }
+                    li:hover{
+                        color: yellow;
+                    }
+                }
+            }
+        }
+    }
+.content{
+                @include property(100%,auto,#dc021a);
+                .cBanner{
+                    @include property(100%,auto,none);
+                    @include Pcenter(0,auto);
+                    .cBtop{
+                        @include property(100%,auto,none);
+                        img{
+                            @include property(100%,auto,none);
+                            float:left;
+                        }
+                    }
+                    .cBbottom{
+                        overflow:hidden;
+                        @include property(100%,auto,none);
+                        @include Pcenter(0,auto);
+                    .cBbl{
+                        @include property(100%,auto,none);
+                        float: left;
+                        .cBblt{
+                            @include property(100%,34%,none);
+                            border: 1px solid #dc021a;
+                            box-sizing: border-box;
+                            .cBblt-1{
+                                @include property(50%,100%,none);
+                                border: 1px solid #dc021a;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                               @include property(100%,100%,none);
+                            }
+                            }
+                        }
+                        .cBblb{
+                            @include property(100%,66%,none);
+                            border: 1px solid #dc021a;
+                            box-sizing: border-box;
+                            img{
+                               @include property(100%,100%,none);
+                            }
+                        }
+            }
+            .cBbr{
+                @include property(100%,auto,none);
+                float: left;
+                .cBbrl{
+                    @include property(100%,auto,none);
+                    float: left;
+                    .cBbrl-1{
+                       @include property(100%,60%,none);
+                       border: 1px solid #dc021a;
+                       box-sizing: border-box;
+                       img{
+                       @include property(100%,100%,none);
+                    }
+                    }
+                    .cBbrl-2{
+                       @include property(100%,40%,none);
+                       border: 1px solid #dc021a;
+                       box-sizing: border-box;
+                       img{
+                       @include property(100%,100%,none);
+                    }
+                    }
+                }
+                .cBbrr{
+                    @include property(100%,auto,none);
+                    float: left;
+                    img{
+                       @include property(100%,100%,none);
+                    }
+                }
+            }
+
+            }
+        }
+        .cNav{
+            @include property(100%,auto,none);
+            @include Pcenter(0,auto);
+            border-bottom: 2px solid red;
+            box-sizing: border-box;
+            .cNtop{
+                @include property(100%,auto,#f1f1f1);
+                border-bottom: 2px solid red;
+                box-sizing: border-box;
+                ul {
+                    @include property(100%,auto,#f1f1f1);
+                    li{
+                        display: none;
+                        float: left;
+                        @include Wcenter(55px,center,15px,black);
+                        margin: 5px;
+                        p{
+                            @include position(relative,-40px,0)
+
+                        }
+                        img{
+                            float:left;
+                            margin-top:10px;
+                        }
+                    }
+                    .li1{
+                        @include property(124px,50px,#f1f1f1);
+                        border-left: 1px solid gray;
+                    }
+                    .li2{
+                        @include property(90px,55px,#f1f1f1);
+                        border-left: 1px solid gray;
+                        border-right: 1px solid gray;
+                    }
+                    }
+                }
+                .cNbot{
+                    // overflow:hidden;
+                    @include property(100%,auto,white);
+                    .son{
+                        @include property(98%,auto,none);
+                        float:left;
+                        @include Pcenter(0px,1px);
+                        p{
+                            @include property(96%,auto,#44a8f5);
+                            border-radius:5px;
+                            @include Wcenter(30px,center,20px,white)
+                        }
+
+                        ul li{
+                            @include Wcenter(20px,center,15px,black);
+                            display: none;
+                        }
+                        .son:hover ul li{
+                            display: block;
+                        }
+                        ul li:hover{
+                            color:red;
+                        }
+                    }
+                }
+            }
+         .main{
+                @include property(100%,auto,none);
+                @include Pcenter(0,auto);
+                @include position(relative,0,0);
+                    .bg{
+                        background: blue;
+                    }
+                    .mainSon1{
+                        @include property(100%,auto,#FFF);
+                        overflow:hidden;
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,500px,#ffffff);
+                            .part1{
+                                @include property(100%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                                    @include property(100%,80%,none);
+                                }
+                                .partson1{
+                                   @include property(100%,20%,none);
+                                   border: 1px solid red;
+                                   box-sizing: border-box;
+                                   margin-top:-1px;
+                                   .ppt{
+                                     @include property(100%,30px,none);
+                                    @include Wcenter(30px,center,20px,red);
+                                   }
+                                   .ppb{
+                                        @include property(100%,30px,none);
+                                        @include Wcenter(30px,center,20px,black);
+                                   }
+
+                                }
+                            }
+                            .part2{
+                                @include property(100%,800px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img[class=pict2]{
+                                    @include property(100%,40%,none);
+                                    border: 1px solid red;
+                                    box-sizing: border-box;
+                                }
+                                .partson2{
+                                    @include property(100%,10%,none);
+                                    border: 1px solid red;
+                                    margin-top:-3px;
+                                    box-sizing: border-box;
+
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon2{
+                        @include property(100%,auto,#fff);
+                        overflow:hidden;
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            .part1{
+                                @include property(100%,500px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img{
+                                    @include property(100%,80%,none);
+                                }
+                                .partson1{
+                                   @include property(100%,20%,none);
+                                   border: 1px solid red;
+                                   box-sizing: border-box;
+                                   margin-top:-1px;
+                                   .ppt{
+                                     @include property(100%,30px,none);
+                                    @include Wcenter(30px,center,20px,red);
+                                   }
+                                   .ppb{
+                                        @include property(100%,30px,none);
+                                        @include Wcenter(30px,center,20px,black);
+                                   }
+
+                                }
+                            }
+                            .part2{
+                                @include property(100%,800px,none);
+                                border: 1px solid red;
+                                box-sizing: border-box;
+                                float: left;
+                                img[class=pict2]{
+                                    @include property(100%,40%,none);
+                                    border: 1px solid red;
+                                    // border-bottom:none;
+                                    box-sizing: border-box;
+
+
+                                }
+                                .partson2{
+                                    @include property(100%,10%,none);
+                                    border: 1px solid red;
+                                    margin-top:-3px;
+                                    box-sizing: border-box;
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon3{
+                        @include property(100%,auto,#FF3333);
+                        overflow:hidden;
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            img{
+                               @include property(50%,auto,none);
+                               border:1px solid red;
+                               box-sizing: border-box;
+                               float:left;
+                            }
+                        }
+                    }
+                    .mainSon4{
+                        overflow:hidden;
+                        @include property(100%,auto,#FFF);
+                        .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            .part4{
+                                @include property(100%,100%,none);
+                                border:1px solid red;
+                                box-sizing: border-box;
+                                .part4-1{
+                                    @include property(100%,100%,none);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+                                }
+                                .part4-2{
+                                    @include property(100%,100%,none);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .mainSon5{
+                        @include property(100%,auto,#FFF);
+                        overflow:hidden;
+                       .mainStop{
+                            @include property(100%,65px,url(../image/bgmain.png));
+                            .mspl{
+                                @include property(150px,65px,none);
+                                float: left;
+                            }
+                            .mspr{
+                                @include property(150px,65px,none);
+                                float: right;
+                                p{
+                                    width:100px;
+                                    border: 1px dotted gray;
+                                }
+                            }
+                        }
+                        .mainSbot{
+                            @include property(100%,auto,#ffffff);
+                            .part5{
+                                @include property(100%,50%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                .part5-2{
+                                    @include property(100%,100%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                       @include property(100%,100%,none)
+                                    }
+
+                                }
+                                .part5-1{
+                                    @include property(50%,100%,#ffffff);
+                                    border:1px solid red;
+                                    box-sizing: border-box;
+                                    float: left;
+                                    img{
+                                        @include property(100%,100%,none);
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                    .mainSon6{
+                        @include property(100%,270px,none);
+                        border: 1px solid red;
+                        box-sizing: border-box;
+                    }
+                    .mainSon7{
+                        @include property(40px,240px,none);
+                        @include position(fixed,100px,50px);
+                        li{
+                            @include property(40px,40px,none);
+                            border: 1px solid gray;
+                            margin: 2px;
+                        }
+
+                    }
+            }
+        }
+}
